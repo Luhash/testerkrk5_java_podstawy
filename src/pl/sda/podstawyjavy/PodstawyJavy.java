@@ -2,8 +2,19 @@ package pl.sda.podstawyjavy;
 
 public class PodstawyJavy {
     public static void main(String[] args) {
-        System.out.println(args[0]);
-        System.out.println(args[1]);
+       char [][] mojaTablica ={
+               {'h', 'e', 'l', 'l', 'o', ' '},
+               {'w', 'o', 'r','l', 'd'}
+       };
+
+       for (int i = 0; i< mojaTablica.length; i++){
+           System.out.print(mojaTablica[i]);
+       }
+
+
+    }
+
+    void wydrukujArgumenty(String[] args) {
 
         for (int i = 0; i< args.length; i++) {
             System.out.println(args [i]);
