@@ -22,5 +22,5 @@ public class PodstawyJavy {
 
         System.out.println("Hello World");
     }
-// petla
+
 }
