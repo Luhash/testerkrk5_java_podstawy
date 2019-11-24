@@ -3,14 +3,10 @@ package pl.sda.podstawyjavy;
 public class PodstawyJavy {
     public static void main(String[] args) {
 
-       int yob = 1991;
-                if (yob < 1980) {
-                    System.out.println("Rok ponizej 1980");
-                } else if (yob > 1990) {
-                    System.out.println("Rok powyzej 1990");
-                } else {
-                    System.out.println("Rok pomierdzy 1980 a 1990");
-                }
+       int yob = 1980;
+
+       String powitanie = (yob ==1980 ) ? "Urodziles sie w 1980" : "Nie urodziles sie w 1980" ;
+        System.out.println(powitanie);
 
     }
     void wydrukujArgumenty(String[] args) {
