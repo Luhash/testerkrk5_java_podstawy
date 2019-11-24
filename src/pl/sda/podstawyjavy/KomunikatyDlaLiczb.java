@@ -2,10 +2,10 @@ package pl.sda.podstawyjavy;
 
 import java.util.Scanner;
 
-public class KomunikatyDlaLiczb {
-    int liczba = -1;
+class KomunikatyDlaLiczb {
+   private int liczba = -1;
 
-    void przyjmijLiczbe() {
+     void przyjmijLiczbe() {
 
         boolean podanaPoprawnaWartosc = false;
 
