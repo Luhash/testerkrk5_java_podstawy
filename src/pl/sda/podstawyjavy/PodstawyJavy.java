@@ -1,22 +1,28 @@
 package pl.sda.podstawyjavy;
 
 
+import pl.sda.podstawyjavy.Samochod.Samochod;
+
 import java.util.function.DoubleToIntFunction;
 
 public class PodstawyJavy {
     public static void main(String[] args) {
-        KomunikatyDlaLiczb komunikatyDlaLiczb = new KomunikatyDlaLiczb();
-        komunikatyDlaLiczb.przyjmijLiczbe();
-        System.out.println("Poprawnie wprowadzona wartosc to: " + komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
 
-        komunikatyDlaLiczb.ustawWartoscZmiennejLiczba(98);
-        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+        Samochod bmw = new Samochod("benzynowy","7","BMW","czarny");
 
-        komunikatyDlaLiczb.ustawWartoscZmiennejLiczba(3);
-        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+        Samochod fiat = new Samochod("benzynowy", "500","Fiat","bialy");
 
-        komunikatyDlaLiczb.ustawWartosciZmiennejLiczba(500,76,10,6,3);
-        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+        Samochod nissan = new Samochod("benzynowy","200sx","nissan","zielony");
+
+        bmw.jedz();
+        fiat.jedz();
+        bmw.jedz();
+        fiat.jedz();                    // odpala stworzone wlasne metody
+        bmw.jedz();
+
+        System.out.println(bmw.modelIMarka() + " " + bmw.stanLicznika() + "km");
+        System.out.println(fiat.modelIMarka() + " " + fiat.stanLicznika() + "km");
+
 
     }
 }
