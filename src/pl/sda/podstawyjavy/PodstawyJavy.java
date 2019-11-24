@@ -2,14 +2,15 @@ package pl.sda.podstawyjavy;
 
 public class PodstawyJavy {
     public static void main(String[] args) {
-      int i = 0;
-        System.out.println(i); // sprawdzenie i
-        System.out.println(++i); // zwiekszamy o 1 przed wykonaniem kodu
-        System.out.println(i); // sprawdzenie i
-        System.out.println(i++); // zwiekszamy o 1 po wykonaniu kodu
-        System.out.println(i); // sprawdzenie i
 
-        System.out.println(i); // drukuje wartosc 2 po wykonaniu wczesniejszych instrukcji
+       int yob = 1991;
+                if (yob < 1980) {
+                    System.out.println("Rok ponizej 1980");
+                } else if (yob > 1990) {
+                    System.out.println("Rok powyzej 1990");
+                } else {
+                    System.out.println("Rok pomierdzy 1980 a 1990");
+                }
 
     }
     void wydrukujArgumenty(String[] args) {
