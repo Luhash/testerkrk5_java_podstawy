@@ -43,5 +43,13 @@ class KomunikatyDlaLiczb {
                 System.out.println("Nowa wartosc jest nieprawidlowa: ");
             }
         }
+        void ustawWartosciZmiennejLiczba(int ... liczby){
+            for (int argument: liczby) {
+                if(argument >= 0 && argument <= 9) {
+                    liczba = argument;
+                    break;
+                }
+            }
+        }
     }
 

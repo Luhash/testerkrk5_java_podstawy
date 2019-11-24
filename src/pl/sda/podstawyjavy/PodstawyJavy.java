@@ -1,6 +1,8 @@
 package pl.sda.podstawyjavy;
 
 
+import java.util.function.DoubleToIntFunction;
+
 public class PodstawyJavy {
     public static void main(String[] args) {
         KomunikatyDlaLiczb komunikatyDlaLiczb = new KomunikatyDlaLiczb();
@@ -13,6 +15,8 @@ public class PodstawyJavy {
         komunikatyDlaLiczb.ustawWartoscZmiennejLiczba(3);
         System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
 
+        komunikatyDlaLiczb.ustawWartosciZmiennejLiczba(500,76,10,6,3);
+        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+
     }
 }
-;
