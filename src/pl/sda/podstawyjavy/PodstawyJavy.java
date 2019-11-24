@@ -5,21 +5,28 @@ import java.util.Scanner;
 public class PodstawyJavy {
     public static void main(String[] args) {
 
+        boolean podanaPoprawnaWartosc = false;
+
         Scanner scanner = new Scanner(System.in);
 
-        int yob = -1; // wartosc zerowa w petli
-        int licznikWykonan = 0;
+        while (!podanaPoprawnaWartosc ){
 
-        while (yob < 2019 && licznikWykonan < 9){
+        System.out.println("Podaj dowolna liczbe od 0 do 9: ");
+        int liczba = scanner.nextInt();
 
-            System.out.println( (licznikWykonan + 1) + ".200 Prosze podaj rok urodzenia:");
+        if (liczba >= 0 && liczba <=9) {
+            podanaPoprawnaWartosc = true;
 
-        yob = scanner.nextInt(); // zmiana wartosci zmiennej
-
-        String powitanie = (yob == 1980) ? "Urodziles sie w 1980 - BRAWO!" : "Urodziles sie w: " + yob;
-
-        System.out.println(powitanie);
-        licznikWykonan++;
+            if (liczba ==3) {
+                System.out.println("Dzien dobry");
+            } else if (liczba ==5){
+                System.out.println("Dobranoc");
+            } else {
+                System.out.println("Standardowa wiadomosc");
+            }
+        }else {
+            System.out.println("Podana wartosc jesst nieprawidlowa");
+        }
     }
     }
     void wydrukujArgumenty(String[] args) {
