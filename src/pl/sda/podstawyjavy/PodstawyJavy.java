@@ -5,18 +5,22 @@ import java.util.Scanner;
 public class PodstawyJavy {
     public static void main(String[] args) {
 
-        for (int i = 0; i <5; i++) {
+        Scanner scanner = new Scanner(System.in);
 
-            Scanner scanner = new Scanner(System.in);
+        int yob = -1; // wartosc zerowa w petli
+        int licznikWykonan = 0;
 
-            System.out.println("Prosze podaj rok urodzenia:");
+        while (yob < 2019 && licznikWykonan < 9){
 
+            System.out.println( (licznikWykonan + 1) + ".200 Prosze podaj rok urodzenia:");
 
-            int yob = scanner.nextInt();
+        yob = scanner.nextInt(); // zmiana wartosci zmiennej
 
-            String powitanie = (yob == 1980) ? "Urodziles sie w 1980" : "Nie urodziles sie w 1980";
-            System.out.println(powitanie);
-        }
+        String powitanie = (yob == 1980) ? "Urodziles sie w 1980 - BRAWO!" : "Urodziles sie w: " + yob;
+
+        System.out.println(powitanie);
+        licznikWykonan++;
+    }
     }
     void wydrukujArgumenty(String[] args) {
 
